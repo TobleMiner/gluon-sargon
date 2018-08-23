@@ -1,18 +1,16 @@
 include $(TOPDIR)/rules.mk
 
 PKG_NAME:=ddhcpd
-PKG_VERSION:=2018-08-14
+PKG_VERSION:=2018-08-16
 PKG_RELEASE:=1
 
 PKG_SOURCE_PROTO:=git
-PKG_SOURCE_URL:=https://github.com/TobleMiner/ddhcpd
+PKG_SOURCE_URL:=https://github.com/sargon/ddhcpd
 PKG_SOURCE_SUBDIR:=$(PKG_NAME)-$(PKG_VERSION)
-PKG_SOURCE_VERSION:=9959afb30443ccea8cf7da12d1a44bf2040b42ca
+PKG_SOURCE_VERSION:=96adb1977efd5dac5ffa6f46fbfa98d07815a9ae
 PKG_SOURCE:=$(PKG_NAME)-$(PKG_VERSION)-$(PKG_SOURCE_VERSION).tar.gz
 
 PKG_BUILD_PARALLEL:=1
-
-TARGET_CFLAGS += -DLOG_LEVEL=20
 
 include $(TOPDIR)/../package/gluon.mk
 
